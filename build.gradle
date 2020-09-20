@@ -9,7 +9,7 @@ plugins {
   id 'java'
 
   // provide pretty output to the console for tests
-  id 'com.adarshr.test-logger' version '2.0.0'
+  id 'com.adarshr.test-logger' version '2.1.0'
 }
 
 repositories {
@@ -35,6 +35,7 @@ java {
 testlogger {
     theme 'mocha'
     slowThreshold 5000
+    logLevel 'QUIET'
 }
 
 test {
