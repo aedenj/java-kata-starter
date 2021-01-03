@@ -14,16 +14,16 @@ import java.util.stream.Stream;
 @DisplayName("solution tests")
 public class SolutionTest {
 
-  @ParameterizedTest(name = "{index} - description ....")
-  @MethodSource("scenarios")
-  public void test() {
-    assertThat(Solution.solution()).isEqualTo(true);
-  }
+    @ParameterizedTest(name = "{index} - description ....")
+    @MethodSource("scenarios")
+    public void test() {
+        assertThat(Solution.solution()).isEqualTo(true);
+    }
 
 
-  static Stream<Arguments> scenarios() {
-      return Stream.of(
-        Arguments.of()
-      );
-  }
+    static Stream<Arguments> scenarios() {
+        return Stream.of(
+            Arguments.of()
+        );
+    }
 }
