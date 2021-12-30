@@ -9,7 +9,7 @@ plugins {
   id 'java'
 
   // provide pretty output to the console for tests
-  id 'com.adarshr.test-logger' version '2.1.0'
+  id 'com.adarshr.test-logger' version '3.1.0'
 }
 
 repositories {
@@ -27,8 +27,8 @@ ext {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_14
-    targetCompatibility = JavaVersion.VERSION_14
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
 
