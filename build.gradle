@@ -34,9 +34,9 @@ java {
 
 // For details see https://github.com/radarsh/gradle-test-logger-plugin
 testlogger {
+    showStandardStreams true
     theme 'mocha'
     slowThreshold 5000
-    logLevel 'QUIET'
 }
 
 test {
