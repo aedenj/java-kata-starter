@@ -9,7 +9,7 @@ plugins {
   id 'java'
 
   // provide pretty output to the console for tests
-  id 'com.adarshr.test-logger' version '3.1.0'
+  id 'com.adarshr.test-logger' version '3.0.0'
 }
 
 repositories {
