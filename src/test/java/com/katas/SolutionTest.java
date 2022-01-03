@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Named;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.Arguments;
@@ -14,11 +15,17 @@ import java.util.stream.Stream;
 
 @DisplayName("solution tests")
 public class SolutionTest {
+    private static Solution solution;
+
+    @BeforeAll
+    static void setup() {
+      solution = new Solution();
+    }
 
     @ParameterizedTest(name = "{index} - description ....")
     @MethodSource("scenarios")
     public void test() {
-        assertThat(Solution.solution()).isEqualTo(true);
+        assertThat(solution.kata()).isEqualTo(true);
     }
 
 
