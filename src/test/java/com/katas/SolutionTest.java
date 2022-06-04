@@ -22,16 +22,16 @@ public class SolutionTest {
       solution = new Solution();
     }
 
-    @ParameterizedTest(name = "{index} - description ....")
+    @ParameterizedTest(name = "{0} is {1}")
     @MethodSource("scenarios")
-    public void test() {
-        assertThat(solution.kata()).isEqualTo(true);
+    public void test(final boolean input, final boolean expected) {
+        assertThat(solution.kata(input)).isEqualTo(expected);
     }
 
 
     static Stream<Arguments> scenarios() {
         return Stream.of(
-            Arguments.of()
+            Arguments.of(Named.of("true", true), Named.of("true", true))
         );
     }
 }
