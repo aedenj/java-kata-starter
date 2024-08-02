@@ -31,7 +31,10 @@ public class SolutionTest {
 
     static Stream<Arguments> scenarios() {
         return Stream.of(
-            Arguments.of(Named.of("true", true), Named.of("true", true))
+            Arguments.of(
+                Named.of("true", true),
+                Named.of("true", true)
+            )
         );
     }
 }
